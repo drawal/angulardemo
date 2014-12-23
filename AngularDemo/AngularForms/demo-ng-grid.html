@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/ng-grid.js"></script>
+
+    <script src="app/DemoNgGrid/demoNgGridApp.module.js"></script>
+
+    <script src="app/DemoNgGrid/regularGrid.js"></script>
+    <script src="app/DemoNgGrid/editableGrid.js"></script>
+    <script src="app/DemoNgGrid/serverSidePagingGrid.js"></script>
+    
+    <link href="Content/DemoNgGrid/ng-grid.css" rel="stylesheet" />
+    <link href="Content/DemoNgGrid/custom-grid.css" rel="stylesheet" />
+    
+    <title>Demo ng-grid</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body ng-app="demoNgGridApp">
+    <div>
+        Testing Angular 4 + 11 = {{4+11}}
+    </div>
+    <br />
+    <div>
+        <fieldset>
+            <legend>Regular Grid</legend>
+            <div ng-controller="ServerSidePagingGrid">
+                <button ng-click="loadData()" type="button" class="btn">Display Data</button>
+                <div class="widerGridStyle" ng-grid="gridOptions"></div>
+            </div>
+        </fieldset>
+    </div>
+    <div>
+        <fieldset>
+            <legend>Editable Grid</legend>
+            <div ng-controller="EditableGrid">
+                <button ng-click="loadData()" type="button">Display Data</button>
+                <div class="gridStyle" ng-grid="gridOptions"></div>
+            </div>
+            <button ng-click="showEditedData" ng-class="btn" />
+        </fieldset>
+    </div>
+
+</body>
+</html>

@@ -1,5 +1,11 @@
-﻿angularFormsApp.factory('efService',
-    function () {
+﻿(function () {
+    'use strict';
+
+    angular
+        .module('employeeFormApp')
+        .factory('employeeFormService', employeeFormService);
+
+    function employeeFormService() {
         return {
             employee: {
                 fullName: "Milton Waddams",
@@ -8,7 +14,8 @@
                 perkCar: true,
                 perkStock: false,
                 perkSixWeeks: true,
-                payrollType:"none"
+                payrollType: "none"
             }
         }
-    });
+    };
+}());

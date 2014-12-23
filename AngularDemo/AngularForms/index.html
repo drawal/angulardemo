@@ -1,17 +1,38 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      ng-app="angularFormsApp">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Angular Forms Demo</title>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
-    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/ng-grid.js"></script>
 
-    <script src="app/AngularFormsApp.js"></script>
-    <script src="app/EmployeeForm/efController.js"></script>
+    <script src="app/EmployeeForm/employeeFormApp.module.js"></script>   
     <script src="app/EmployeeForm/efDirective.js"></script>
     <script src="app/EmployeeForm/efService.js"></script>
+    <script src="app/EmployeeForm/employeeForm.js"></script>
+    <!--<script src="app/HeaderController.js"></script>-->
+    <!--<script src="Scripts/angular-strap.js"></script>-->
+
 </head>
-<body ng-controller="efController" class="container">
-    <employee-form/>
+<body class="container" ng-app="employeeFormApp">    
+    <!--<div class="collapse navbar-collapse" ng-controller="HeaderController">
+        <div class="navbar" bs-navbar>
+            <li data-match-route="/"><a href="/">Home</a></li>
+        </div>
+
+
+            <ul class="nav navbar-nav">
+                <li ng-class="{ active: isActive('/')}"><a href="/">Home</a></li>
+                <li ng-class="{ active: isActive('/dogs')}"><a href="/dogs">Dogs</a></li>
+                <li ng-class="{ active: isActive('/cats')}"><a href="/cats">Cats</a></li>
+            </ul>
+        </div>-->
+    <!--<div ng-view>
+
+    </div>-->
+    <div ng-controller="EmployeeForm">
+        <employee-form />
+    </div>
 </body>
 </html>

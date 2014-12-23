@@ -5,6 +5,14 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularForms", "AngularForms\AngularForms.csproj", "{22C05E04-C172-42CD-A7E4-07D5C0AF720E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{9E07036E-F93F-420F-B7F0-070F931B12FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Contracts.csproj", "{C6DCD5D8-2784-4BD4-8767-9D8652E4A8A6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Angular", "Angular", "{F303D0F1-6790-46C3-9C13-179448BC7F5E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{5A46EF17-A4DD-4260-AB04-836ED72350E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +23,20 @@ Global
 		{22C05E04-C172-42CD-A7E4-07D5C0AF720E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22C05E04-C172-42CD-A7E4-07D5C0AF720E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22C05E04-C172-42CD-A7E4-07D5C0AF720E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E07036E-F93F-420F-B7F0-070F931B12FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E07036E-F93F-420F-B7F0-070F931B12FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E07036E-F93F-420F-B7F0-070F931B12FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E07036E-F93F-420F-B7F0-070F931B12FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6DCD5D8-2784-4BD4-8767-9D8652E4A8A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6DCD5D8-2784-4BD4-8767-9D8652E4A8A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6DCD5D8-2784-4BD4-8767-9D8652E4A8A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6DCD5D8-2784-4BD4-8767-9D8652E4A8A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{22C05E04-C172-42CD-A7E4-07D5C0AF720E} = {F303D0F1-6790-46C3-9C13-179448BC7F5E}
+		{9E07036E-F93F-420F-B7F0-070F931B12FD} = {5A46EF17-A4DD-4260-AB04-836ED72350E0}
 	EndGlobalSection
 EndGlobal

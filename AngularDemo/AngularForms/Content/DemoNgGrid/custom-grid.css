@@ -1,0 +1,11 @@
+﻿.gridStyle {
+    border: 1px solid rgb(212,212,212);
+    width: 500px; 
+    height: 250px;
+}
+
+.widerGridStyle {
+    border: 1px solid rgb(212,212,212);
+    height: 270px;
+    margin:5px; 
+}
